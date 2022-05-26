@@ -1,0 +1,172 @@
+@media (max-width: 768px) {
+    /* Header styles */
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header nav .navbar_left, header nav .navbar_right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        color: var(--black);
+        font-size: var(--md);
+    }
+    .navbar_left {
+        padding-left: 15px;
+    }
+    .navbar_left li:nth-child(2), .navbar_left li:nth-child(3) {
+        margin-bottom: 6px;
+        cursor: pointer;
+        font-weight: 600;
+        color: rgb(122, 122, 122);
+    }
+    .navbar_left li:nth-child(2):hover, .navbar_left li:nth-child(3):hover {
+        color: rgb(23, 93, 244);
+        border-bottom: 2px solid rgb(23, 93, 244);
+        padding-bottom: 5px;
+    }
+    .navbar_left li a img {
+        width: 25px;
+        height: 25px;
+        object-fit: contain;
+    }
+    .navbar_right {
+        padding-right: 15px;
+    }
+    .navbar_right li {
+        margin: 0;
+    }
+    .navbar_right li:nth-child(1), .navbar_right li:nth-child(2) {
+        display: none;
+    }
+
+    /* Main styles */
+
+    main {
+        padding-bottom: 0px;
+    }
+
+    main section:nth-child(2) {
+        width: 95%;
+    }
+    main section .input_container {
+        width: 100%;
+    }
+    .button_container {
+        display: none;
+    }
+    .google_logo_section a {
+        width: 35%;
+    }
+    .google_logo_section a picture {
+        position: relative;
+        margin: 0 auto;
+    }
+    .google_logo_section a picture img {
+        width: 100%;
+        object-fit: contain;
+    }
+    .google_logo_section p {
+        display: block;
+        position: absolute;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: rgb(23, 93, 244);
+    }
+    .trending_section {
+        display: block;
+    }
+    .trending_section {
+        width: 95%;
+    }
+    .trending_section_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .trending_section_header h2 {
+        font-size: var(--md);
+        font-weight: 500;
+        color: var(--black);
+    }
+    .trending_section_header img {
+        width: 23px;
+        object-fit: contain;
+        transform: rotate(90deg);
+    }
+    .trending_section_content {
+        width: 100%;
+    }
+    .trending_section_content div {
+        display: flex;
+        width: 100%;
+    }
+    .trending_section_content div li > img {
+        width: 15px;
+        object-fit: contain;
+    }
+    .trending_section_content_icon {
+        width: auto;
+    }
+    .trending_section_content div li {
+        font-size: var(--md);
+        color: var(--black);
+        border-bottom: 1px solid rgb(227, 227, 227);
+        padding-bottom: 15px;
+        padding-top: 15px;
+        padding-left: 20px;
+        cursor: pointer;
+        justify-self: start;
+    }
+    .trending_section_content_news {
+        width: 100%;
+    }
+    .trending_section_content div:hover {
+        background-color: rgb(167, 211, 254);
+    }
+    /* footer styles */
+
+    footer section {
+        padding: 7px 30px;
+    }
+    .footer_hollow_section {
+        display: block;
+        height: 43px;
+        border-top: 1px solid var(--footer-border-color);
+    }
+    .desktop_footer {
+        display: none;
+    }
+    .tablet_mobile_footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tablet_mobile_footer ul {
+        display: flex;
+        gap: 35px;
+        font-size: 1.3rem;
+        color: rgb(128, 128, 128);
+    }
+}
+
+@media (max-width: 500px) {
+    header nav .navbar_left, header nav .navbar_right {
+        gap: 10px;
+    }
+    .google_logo_section p { 
+        bottom: -15px;
+        right: -18px;
+    }
+}
+
+@media (min-width: 501px) {
+    .google_logo_section p {
+        bottom: -12px;
+        right: -5px;
+    }
+}

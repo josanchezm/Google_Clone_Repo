@@ -1,0 +1,17 @@
+@media (min-width: 769px) {
+    .google_logo_section a {
+        width: 25%;
+    }
+    main section:nth-child(2) {
+        width: 60%;
+    }  
+}
+
+@media (min-width: 1600px) {
+    .google_logo_section a {
+        width: 17.01%;
+    } 
+    main section:nth-child(2) {
+        width: 40%;
+    }  
+}

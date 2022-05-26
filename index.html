@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/mobile.css" media="(max-width: 768px)">
+    <link rel="stylesheet" href="./css/tablet-laptop.css" media="(min-width: 769px)">
+    <title>Google clone</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="navbar_left">
+                    <li><a href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png?20160819113547" alt="Menu"></a></li>
+                    <li onclick="googleLogo()">All</li>
+                    <li onclick="googleImages()">Images</li>
+                </ul>
+                <ul class="navbar_right">
+                    <li><a href="/">Gmail</a></li>
+                    <li><a href="/">Images</a></li>
+                    <li><a href="/"><img src="https://cdn3.iconfinder.com/data/icons/faticons/32/grid-2-01-512.png" alt="Grid options menu"></a></li>
+                    <li><a href="/"><img src="https://findicons.com/files/icons/1250/halloween_2009/256/howling_wolf.png" alt="User's icon"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="google_logo_section">
+                <a href="/">
+                    <picture>
+                        <img src="https://logodownload.org/wp-content/uploads/2014/09/google-logo-1.png" alt="Google logo">
+                        <p id="google-images"></p>
+                    </picture>
+                </a>
+            </section>
+            <section>
+                <div class="input_container">
+                    <span>
+                        <img src="https://www.freeiconspng.com/uploads/search-icon-png-2.png" alt="Search icon">
+                    </span>
+                    <input type="text">
+                    <a href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Google_microphone_logo.png" alt="Microphone icon for voice searching"></a>
+                </div>        
+            </section>
+            <section class="button_container">
+                <button type="button">Google Search</button>
+                <button type="button">I'm Feeling Lucky</button>
+            </section>
+            <section class="trending_section">
+                <div class="trending_section_header">
+                    <h2>Search trends</h2>
+                    <img src="https://www.shareicon.net/data/512x512/2016/07/10/120011_options_512x512.png" alt="More options menu">
+                </div>
+                <ul class="trending_section_content">
+                    <div>
+                        <li><img src="https://pic.onlinewebfonts.com/svg/img_520987.png" alt="trending_up_arrow"></li>
+                        <li class="trending_section_content_news">presidential candidates debate</li>
+                    </div>
+                    <div>
+                        <li><img src="https://pic.onlinewebfonts.com/svg/img_520987.png" alt="trending_up_arrow"></li>
+                        <li class="trending_section_content_news">Cundinamarca lottery results</li>
+                    </div>
+                    <div>
+                        <li><img src="https://pic.onlinewebfonts.com/svg/img_520987.png" alt="trending_up_arrow"></li>
+                        <li class="trending_section_content_news">youth in action registrations</li>
+                    </div>
+                    <div>
+                        <li><img src="https://pic.onlinewebfonts.com/svg/img_520987.png" alt="trending_up_arrow"></li>
+                        <li class="trending_section_content_news">last presidential debate live</li>
+                    </div>
+                    <div>
+                        <li><img src="https://pic.onlinewebfonts.com/svg/img_520987.png" alt="trending_up_arrow"></li>
+                        <li class="trending_section_content_news">solidarity income recipients</li>
+                    </div>
+                    <div>
+                        <li><img src="https://pic.onlinewebfonts.com/svg/img_520987.png" alt="trending_up_arrow"></li>
+                        <li class="trending_section_content_news">champions League Final</li>
+                    </div>
+                    <div>
+                        <li><img src="https://pic.onlinewebfonts.com/svg/img_520987.png" alt="trending_up_arrow"></li>
+                        <li class="trending_section_content_news">weather forecast</li>
+                    </div>
+                </ul> 
+            </section>
+        </main>
+        <footer>
+            <section>
+                Colombia
+            </section>
+            <section class="footer_hollow_section">
+                
+            </section>
+            <nav class="desktop_footer">
+                <ul>
+                    <li><a href="/">Advertising</a></li>
+                    <li><a href="/">Business</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">How search Works</a></li>
+                </ul>
+                <ul>
+                    <li><a href="/">Privacy</a></li>
+                    <li><a href="/">Terms</a></li>
+                    <li><a href="/">Preferences</a></li>
+                </ul>
+            </nav>
+            <nav class="tablet_mobile_footer">
+                <ul>
+                    <li>Dark theme: off</li>
+                    <li>Preferences</li>
+                </ul>
+                <ul>
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                </ul>
+                <ul>
+                    <li>Advertising</li>
+                    <li>Business</li>
+                    <li>About</li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+/* Proyect's root */
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --button-color: #F7F7F7;
+    --light-gray: rgb(244, 244, 244);
+    --input-border-color: #dfe1e5;
+    --hover-input-border-color: #dfe1e500;
+    --box-shadow-input-color: #20212447;
+    --box-shadow-button-color: #414141;
+    --buttons-background-color: #eff1f7;
+    --footer-background-color: #f2f2f2;
+    --footer-border-color: #dadce0;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+
+/* Global styles */
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 500;
+    color: rgb(122, 122, 122);
+}
+
+/* Main container styles */
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template: auto 1fr auto/auto;
+    gap: 30px;
+}
+
+/* Header styles */
+
+header {
+    width: 100%;
+}
+
+.navbar_left {
+    display: none;
+}
+
+.navbar_right { 
+    display: flex;
+    justify-content: end;
+    align-items: center; 
+    padding-right: 30px;
+}
+
+.navbar_right li {
+    margin-right: 20px;
+    font-size: var(--md);
+}
+
+.navbar_right li:nth-child(1):hover, .navbar_right li:nth-child(2):hover  {
+    background-color: var(--light-gray);
+    padding: 10px;
+    border-radius: 8px;
+    transition-duration: .3s;
+}
+
+.navbar_right li:nth-child(3):hover, .navbar_right li:nth-child(4):hover  {
+    background-color: var(--light-gray);
+    padding: 10px;
+    border-radius: 50%;
+    transition-duration: .3s;
+}
+
+.navbar_right li:nth-child(3) img {
+    width: 25px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.navbar_right li:nth-child(4) img {
+    width: 35px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+/* Main section styles */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 150px;
+    gap: 30px;
+}
+
+.google_logo_section {
+    margin: 0 auto;
+}
+
+.google_logo_section a {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.google_logo_section p {
+    display: none;
+}
+
+.google_logo_section a picture img {
+    width: 100%;
+}
+
+main section:nth-child(2) {
+    margin: 0 auto;
+    height: 44px;
+}
+
+main section .input_container {
+    width: 95%;
+    height: 100%;
+    border: 1px solid var(--input-border-color);
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section .input_container:hover {
+    box-shadow: 0 1px 6px 0 var(--box-shadow-input-color);
+    border-color: var(--hover-input-border-color);
+}
+
+main section .input_container span, main section .input_container a {
+    width: 14px;
+    margin: 0 12px;
+}
+
+main section .input_container span img, main section .input_container a img {
+    width: 100%;
+    object-fit: contain;
+}
+
+main section .input_container input {
+    outline: none;
+    width: 87%;
+    height: 34px;
+    border: none;
+    font-size: var(--md);
+}
+
+.button_container {
+    display: flex;
+    gap: 30px;
+}
+
+.button_container button {
+    font-size: var(--sm);
+    padding: 0 30px;
+    height: 36px;
+    border: none;
+    background-color: var(--buttons-background-color);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button_container button:hover {
+    border: 1px solid var(--light-gray);
+    box-shadow: 0px 1px 1px var(--box-shadow-button-color);
+}
+
+.trending_section {
+    display: none;
+}
+
+/* Footer styles */
+
+footer section {
+    background-color: var(--footer-background-color);
+    padding: 15px 30px;
+    font-size: var(--md);
+    color: rgb(128, 128, 128);
+}
+
+.footer_hollow_section {
+    display: none;
+}
+
+.tablet_mobile_footer {
+    display: none;
+}
+
+footer nav {
+    background-color: var(--footer-background-color);
+    border: 1px solid var(--footer-border-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+footer nav ul {
+    display: flex;
+    font-size: var(--sm);
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+footer nav ul li:hover {
+    text-decoration: underline;
+}
