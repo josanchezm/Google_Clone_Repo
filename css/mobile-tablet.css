@@ -78,14 +78,13 @@
     }
     .trending_section {
         display: block;
-    }
-    .trending_section {
         width: 95%;
     }
     .trending_section_header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 0 18px;
     }
     .trending_section_header h2 {
         font-size: var(--md);
@@ -96,35 +95,33 @@
         width: 23px;
         object-fit: contain;
         transform: rotate(90deg);
+        cursor: pointer;
     }
     .trending_section_content {
-        width: 100%;
+        padding: 0 15px;
     }
     .trending_section_content div {
         display: flex;
         width: 100%;
+        align-items: center;
+        border-bottom: 1px solid rgb(227, 227, 227);
+        padding: 15px 0;
     }
-    .trending_section_content div li > img {
+    .trending_section_content div span {
         width: 15px;
+        margin-left: 15px;
+    }
+    .trending_section_content div span img {
+        width: 100%;
         object-fit: contain;
     }
-    .trending_section_content_icon {
-        width: auto;
-    }
-    .trending_section_content div li {
+    .trending_section_content div a {
         font-size: var(--md);
         color: var(--black);
-        border-bottom: 1px solid rgb(227, 227, 227);
-        padding-bottom: 15px;
-        padding-top: 15px;
         padding-left: 20px;
         cursor: pointer;
-        justify-self: start;
     }
-    .trending_section_content_news {
-        width: 100%;
-    }
-    .trending_section_content div:hover {
+    .trending_section_content > div:hover {
         background-color: rgb(167, 211, 254);
     }
     /* footer styles */
@@ -151,6 +148,9 @@
         gap: 35px;
         font-size: 1.3rem;
         color: rgb(128, 128, 128);
+    }
+    .tablet_mobile_footer ul li {
+        cursor: pointer;
     }
 }
 
