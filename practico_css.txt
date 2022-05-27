@@ -39,7 +39,7 @@ estos cambios anteriores, al facilitar el usar el height de 100vh en la main gri
 hacer lo que queria, que es que mi grid principal ocupe el 100% del ancho y alto del body, de esta forma al 
 establecer en grid template rows auto 1fr auto, el header y footer acoplan su alto estrictamente al tama;o de su 
 contenido; dejando el resto del alto disponible para el main content, que es donde tenemos el logo de google
-junto a su barra de busqueda y botones asddasad
+junto a su barra de busqueda y botones asddasad asdasdsa
 
 este contenido main lo posicionamos en el medio de su fila horizontal y verticalmente por medio de darle display
 flex a main, justify y align center junto a flex direction column 
